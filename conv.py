@@ -44,6 +44,6 @@ FWAV = FWAV_head + INFO_head + data
 
 name = os.path.splitext(sys.argv[1])[0]
 
-with open(name + ".bfwav", "wb") as output:
+with open(f"{name}.bfwav", "wb") as output:
     output.write(FWAV)
     output.close()
